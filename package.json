@@ -1,0 +1,32 @@
+{
+  "name": "alexa",
+  "version": "0.0.0",
+  "description": "Alexa => Nest & Airbnb",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khuezy/alexa.git"
+  },
+  "keywords": [
+    "alexa",
+    "nest",
+    "airbnb"
+  ],
+  "author": "Khue Nguyen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/khuezy/alexa/issues"
+  },
+  "homepage": "https://github.com/khuezy/alexa#readme",
+  "dependencies": {
+    "alexa-app": "^2.3.4",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "pem": "^1.8.3"
+  },
+  "engine": "node >= 6.0.0"
+}
