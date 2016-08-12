@@ -19,6 +19,8 @@ var alexaApp = require('./apps/nest');
   });
 
   alexaApp.id = 'amzn1.ask.skill.cd91b9bf-e237-4f1d-bd89-506ae6ad3ad5';
+  app.id = alexaApp.id;
+  console.log(app.id);
   alexaApp.express(app, "/echo/");
 
   app.listen(PORT);
