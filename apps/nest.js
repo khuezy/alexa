@@ -1,8 +1,8 @@
-let alexa = require('alexa-app');
+var alexa = require('alexa-app');
 
-const nestApp = new alexa.app('nest');
+var nestApp = new alexa.app('nest');
 
-nestApp.launch((req, res) => {
+nestApp.launch(function(req, res) {
   res.say('Nest app launched!');
 });
 
