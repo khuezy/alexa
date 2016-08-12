@@ -20,7 +20,7 @@ pem.createCertificate({days:1, selfSigned:true}, function(err, keys) {
 
   alexaApp.express(app, "/echo/");
 
-  https.createServer({key: keys.serviceKey, cert: keys.certificate}, app).listen(4300);
+  https.createServer({key: keys.serviceKey, cert: keys.certificate}, app).listen(PORT);
   console.log("Listening on port "+PORT);
 });
 
