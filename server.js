@@ -23,3 +23,8 @@ pem.createCertificate({days:1, selfSigned:true}, function(err, keys) {
   https.createServer({key: keys.serviceKey, cert: keys.certificate}, app).listen(4300);
   console.log("Listening on port "+PORT);
 });
+
+process.on('uncaughtException', function(err) {
+  console.error(err);
+  console.log('oops...');
+});
