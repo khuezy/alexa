@@ -14,8 +14,9 @@ pem.createCertificate({days:1, selfSigned:true}, function(err, keys) {
   app.use(bodyParser.json());
 
   app.get('/test', function(req, res) {
+    console.log('testing...');
     res.send('hi');
-  })
+  });
 
   alexaApp.express(app, "/echo/");
 

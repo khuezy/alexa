@@ -12,6 +12,7 @@ nestApp.intent('testIntent', {
     "go"
   ],
   function(req, res) {
+    console.log(req);
     res.say("go!");
   }
 })
