@@ -7,7 +7,7 @@ var alexaApp = require('./apps/nest');
 
 
 
-pem.createCertificate({days:1, selfSigned:true}, function(err, keys) {
+//pem.createCertificate({days:1, selfSigned:true}, function(err, keys) {
   var app = express();
   var PORT = process.env.PORT || 4300;
   app.use(bodyParser.urlencoded({ extended: true }));
@@ -20,9 +20,10 @@ pem.createCertificate({days:1, selfSigned:true}, function(err, keys) {
 
   alexaApp.express(app, "/echo/");
 
-  https.createServer({key: keys.serviceKey, cert: keys.certificate}, app).listen(PORT);
+  app.listen(PORT);
+  //https.createServer({key: keys.serviceKey, cert: keys.certificate}, app).listen(PORT);
   console.log("Listening on port "+PORT);
-});
+//});
 
 process.on('uncaughtException', function(err) {
   console.error(err);
