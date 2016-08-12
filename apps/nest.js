@@ -6,7 +6,7 @@ nestApp.launch((req, res) => {
   res.say('Nest app launched!');
 });
 
-nestApp.intent('testIntent', {
+nestApp.intent('TestIntent', {
   slots: {},
   utterances: [
     "go"
