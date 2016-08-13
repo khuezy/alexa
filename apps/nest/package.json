@@ -1,0 +1,14 @@
+{
+  "name": "hello",
+  "version": "1.0.0",
+  "description": "A sample Alexa app",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "alexa": {
+    "applicationId":"amzn1.ask.skill.cd91b9bf-e237-4f1d-bd89-506ae6ad3ad5"
+  },
+  "dependencies": {
+    "alexa-app": "^2.1.0"
+  }
+}
