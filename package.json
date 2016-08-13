@@ -4,9 +4,17 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "alexa-app": "^2.3.4"
+    "alexa-app": "^2.1.0",
+    "bluebird": "^2.9.34",
+    "body-parser": "~1.0.1",
+    "ejs": "~0.7.1",
+    "express": "~4.0.0",
+    "hotswap": "^1.1.0",
+    "unofficial-nest-api": "^0.1.4"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "supervisor": "^0.6.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,16 +27,5 @@
   "bugs": {
     "url": "https://github.com/khuezy/alexa/issues"
   },
-  "homepage": "https://github.com/khuezy/alexa#readme",
-  "dependencies": {
-    "alexa-app": "^2.1.0",
-    "bluebird": "^2.9.34",
-    "body-parser": "~1.0.1",
-    "ejs": "~0.7.1",
-    "express": "~4.0.0",
-    "hotswap": "^1.1.0"
-  },
-  "devDependencies": {
-    "supervisor": "^0.6.0"
-  }
+  "homepage": "https://github.com/khuezy/alexa#readme"
 }
