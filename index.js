@@ -214,7 +214,7 @@ var appServer = function(config) {
 
 	}
 		// Start the server listening
-		config.port = config.port || process.env.port || 80;
+		config.port = config.port || process.env.PORT || 80;
 		var instance = self.express.listen(config.port);
 		self.log("Listening on HTTP port "+config.port);
 
